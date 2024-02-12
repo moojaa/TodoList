@@ -1,0 +1,103 @@
+h1 {
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    color: white;
+    margin-top: 1em;
+}
+
+div{
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.back-ground {
+    background:url(img/back-ground.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.box-color {
+    height: 100vh;
+}
+
+.task-area {
+    margin-top: 2em;
+    width: 100%;
+}
+
+.task-tab {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10em;
+}
+
+.task-tab div {
+    padding: .5em;
+    cursor: pointer;
+}
+
+#under-line {
+    height: 4px;
+    border-radius: 10em;
+    background-color: rgb(43, 43, 43);
+    position: absolute;
+    padding: 0px;
+    transition: .5s;
+}
+
+.task {
+    margin-top: .5em;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    border-radius: .5em;
+}
+
+.fin {
+    text-decoration: line-through;
+}
+
+.fin-bg {
+    background-color: lightgray;
+}
+
+.red {
+    color: red;
+}
+
+
+#task-input {
+    border: none;
+}
+
+#task-input:focus{
+    outline: none;
+}
+
+.input-area {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10em;
+    align-items: center;
+}
+
+.round{
+    border-radius: 10em;
+}
