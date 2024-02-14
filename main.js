@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     underLine.style.left = initialTab.offsetLeft + "px";
     underLine.style.width = initialTab.offsetWidth + "px";
     underLine.style.top = initialTab.offsetTop - 8 + initialTab.offsetHeight + "px";
+    addButton.disabled = true
 });
 
 const filter = (event) => {
@@ -39,6 +40,14 @@ tabs.forEach((item, index) => {
     item.addEventListener("click", (event) => filter(event))
 })
 
+taskInput.addEventListener("input",()=>{
+    if(taskInput.value === ""){
+        addButton.disabled = true
+    }else{
+        addButton.disabled =false
+    }
+})
+
 const addTask = () => {
     let task = {
         id: randomIDGenerate(),
@@ -46,6 +55,8 @@ const addTask = () => {
         fin: false
     }
     taskList.push(task)
+    taskInput.value = ""
+    addButton.disabled = true
     render()
 }
 
